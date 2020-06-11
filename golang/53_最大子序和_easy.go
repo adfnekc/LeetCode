@@ -30,17 +30,15 @@
 
 // @lc code=start
 func maxSubArray(nums []int) int {
+	sum := 0
 	max := nums[0]
-	for k1,v1 := range nums {
-		tmp :=0
-		if (v1 + tmp) > max {
-			max = v1 + tmp
+	for _,v := range nums {
+		sum += v
+		if sum > max{
+			max = sum
 		}
-		for _,v2 := range nums[k1+1:]{
-			tmp = tmp + v2
-			if (v1 + tmp) > max {
-				max = v1 + tmp
-			}
+		if sum < 0 {
+			sum = 0
 		}
 	}
 	return max
