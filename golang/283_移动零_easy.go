@@ -30,11 +30,15 @@
  */
 
 // @lc code=start
-func moveZeroes(nums []int)  {
-	if k,v := range nums ; v == 0{
-		for i := k + 1; i < len(nums); i++ {
-			if nums[i] == 0 {
-				
+func moveZeroes(nums []int) {
+	l := len(nums)
+	for i := 0; i < l; i++ {
+		if nums[i] == 0 {
+			for j := i + 1; j < l; j++ {
+				if nums[j] != 0 {
+					nums[i], nums[j] = nums[j], nums[i]
+					break
+				}
 			}
 		}
 	}

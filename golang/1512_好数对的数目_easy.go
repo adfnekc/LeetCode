@@ -1,3 +1,4 @@
+// @lc app=leetcode.cn id=1512 lang=golang
 // 1512. 好数对的数目
 // 给你一个整数数组 nums 。
 
@@ -27,6 +28,7 @@
 // 1 <= nums[i] <= 100
 // 通过次数6,993提交次数7,791
 
+// @lc code=start
 func numIdenticalPairs(nums []int) int {
 	count := 0
 	for k1, v1 := range nums {
@@ -38,3 +40,4 @@ func numIdenticalPairs(nums []int) int {
 	}
 	return count
 }
+// @lc code=end
