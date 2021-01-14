@@ -20,13 +20,13 @@
 
 // 输入：nums = [1,2,3]
 // 输出：0
- 
 
 // 提示：
 
 // 1 <= nums.length <= 100
 // 1 <= nums[i] <= 100
 // 通过次数6,993提交次数7,791
+package main
 
 // @lc code=start
 func numIdenticalPairs(nums []int) int {
@@ -40,4 +40,5 @@ func numIdenticalPairs(nums []int) int {
 	}
 	return count
 }
+
 // @lc code=end
