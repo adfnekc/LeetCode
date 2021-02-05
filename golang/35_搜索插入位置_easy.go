@@ -59,9 +59,9 @@ func searchInsert(nums []int, target int) int {
 	}
 	if target < nums[medinum] {
 		return 0 + searchInsert(nums[:medinum], target)
-	} else {
-		return medinum + searchInsert(nums[medinum:], target)
 	}
+	return medinum + searchInsert(nums[medinum:], target)
+
 }
 
 // @lc code=end

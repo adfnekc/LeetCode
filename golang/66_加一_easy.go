@@ -45,7 +45,7 @@ func plusOne(digits []int) []int {
 		}
 		return append(plusOne(digits[:l]), 0)
 	}
-	digits[l] += 1
+	digits[l]++
 	return digits
 }
 
