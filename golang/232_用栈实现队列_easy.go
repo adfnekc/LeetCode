@@ -77,6 +77,7 @@
  *
  *
  */
+package main
 
 // @lc code=start
 type MyQueue struct {
@@ -110,7 +111,7 @@ func isempty(stack *[]int) bool {
 }
 
 /** Initialize your data structure here. */
-func Constructor() MyQueue {
+func Constructor_MyQueue() MyQueue {
 	return MyQueue{
 		inStack:  &[]int{},
 		outStack: &[]int{},
@@ -149,4 +150,3 @@ func (this *MyQueue) Empty() bool {
  * param_4 := obj.Empty();
  */
 // @lc code=end
-

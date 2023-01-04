@@ -16,6 +16,5 @@ type TreeNode struct {
 }
 
 func main() {
-	a, b := []int{1}, []int{2, 4}
-	Pf("%f", F(a, b))
+	Pl(nthUglyNumber(11))
 }

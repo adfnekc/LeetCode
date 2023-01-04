@@ -46,6 +46,9 @@
  *
  *
  */
+package main
+
+import "math"
 
 // @lc code=start
 /**
@@ -71,4 +74,3 @@ func helper(root *TreeNode, min, max int) bool {
 }
 
 // @lc code=end
-
