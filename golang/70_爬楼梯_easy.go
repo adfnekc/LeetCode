@@ -43,21 +43,16 @@ package main
 
 // @lc code=start
 func climbStairs(n int) int {
-	dp := make(map[int]int)
-	dp[1] = 1
-	dp[2] = 2
-	return climbStairsHelper(n, dp)
-}
+	if n < 2 {
+		return 1
+	}
+	p := 1
+	q := 2
 
-func climbStairsHelper(n int, dp map[int]int) int {
-	if n == 0 {
-		return 0
+	for i := 2; i < n; i++ {
+		q, p = q+p, q
 	}
-	if step, ok := dp[n]; ok {
-		return step
-	}
-	dp[n] = climbStairsHelper(n-1, dp) + climbStairsHelper(n-2, dp)
-	return dp[n]
+	return q
 }
 
 // @lc code=end
